@@ -1,0 +1,24 @@
+{
+  "name": "s3-fnui",
+  "description": "s3 fnui front",
+  "main": "index.js",
+  "authors": [
+    "zjfh-chent"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "s3",
+    "fnui"
+  ],
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery"
+  }
+}

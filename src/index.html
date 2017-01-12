@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- 如果是IE浏览器，使用最新版本的兼容模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 移动优先 -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 对360浏览器，默认使用webkit内核 -->
+    <meta name="renderer" content="webkit">
+
+    <title>工银聚移动端</title>
+    <!-- page start -->
+    <link rel = "stylesheet" href="app.css" >
+</head>
+
+<body ng-app="myApp">
+
+<header class="fn-topbar header" id="top">
+    <h1 class="fn-topbar-brand">蜂鸟UI 2.0</h1>
+    <button class="fn-btn fn-topbar-btn fn-topbar-toggle"><span class="fn-icon-bars" data-fn-offcanvas="{target: '#doc-oc-demo1', effect: 'push'}"></span></button>
+    <div id="doc-oc-demo1" class="fn-offcanvas">
+        <div class="fn-offcanvas-bar">
+            <div class="fn-offcanvas-content">
+                <ul>
+                    <li>这里写列表</li>
+                    <li>通过样式美化</li>
+                    <li>就是一个正常侧边栏</li>
+                    <li class="fn-head-logo"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- 中间内容 view -->
+<div ng-view></div>
+
+
+<!-- 结束 -->
+<div class="amz-toolbar" id="amz-toolbar">
+    <a href="#top" title="回到顶部" class="fn-icon-btn fn-icon-arrow-up"
+       id="amz-go-top"></a>
+</div>
+
+
+<footer class="footer">
+    <div class="foot-logo"></div>
+    <p class="amz-cp">
+        &copy; 2015 浙江省分行网络金融中心技术研发部 版权所有 <br>官网：ui.gyj.com
+    </p>
+</footer>
+
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/fnui.min.js"></script>
+<script src="scripts/vendor.js"></script>
+<script src="scripts/app.js"></script>
+</body>
+</html>
