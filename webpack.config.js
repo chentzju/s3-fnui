@@ -99,7 +99,7 @@ module.exports = {
 
 
   plugins: [
-      new ExtractTextPlugin("app.css", {
+      new ExtractTextPlugin("style/app.css", {
           allChunks: true
       }),
 

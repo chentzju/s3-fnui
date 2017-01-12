@@ -42,8 +42,8 @@ gulp.task("webpack:build", function(callback) {
 
         gulp.src('src/index.html').pipe(gulp.dest('dist'));
         gulp.src('src/404.html').pipe(gulp.dest('dist'));
-        gulp.src('bower_components/jquery/dist/jquery.min.js').pipe(gulp.dest('dist/scripts'));
-        gulp.src('assets/fnui/dist/fnui.min.js').pipe(gulp.dest('dist/scripts'));
+        gulp.src('assets/jquery.min.js').pipe(gulp.dest('dist/scripts'));
+        gulp.src('assets/fnui/dist/js/fnui.min.js').pipe(gulp.dest('dist/scripts'));
         fse.copySync('src/views', 'dist/views');
         //callback();
     });
@@ -72,8 +72,8 @@ gulp.task("webpack:build-dev", function(callback) {
 
         //Copy a file or directory. Sync.
         fse.copySync('src/index.html', 'dist/index.html');
-        gulp.src('bower_components/jquery/dist/jquery.min.js').pipe(gulp.dest('dist/scripts'));
-        gulp.src('assets/fnui/dist/fnui.min.js').pipe(gulp.dest('dist/scripts'));
+        gulp.src('assets/jquery.min.js').pipe(gulp.dest('dist/scripts'));
+        gulp.src('assets/fnui/dist/js/fnui.min.js').pipe(gulp.dest('dist/scripts'));
         fse.copySync('src/views', 'dist/views');
 
         callback();
